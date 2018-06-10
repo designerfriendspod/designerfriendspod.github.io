@@ -2,6 +2,7 @@
 <html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open-Sans' rel='stylesheet'>
 <style>
 html{
   height: 100%;
@@ -11,7 +12,7 @@ html{
     font-size: calc(42px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
   h3 {
-    font-size: calc(24px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
   .button {
   	padding-top: 20px;
@@ -27,12 +28,11 @@ html{
     font-size: 42px;
   }
   h3 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 body {
 	background-color: #003333;
-	font-family: 'Cabin';
 	display: flex;
   	flex-direction: column;
   	height: 100vh;
@@ -46,17 +46,32 @@ body {
     padding: 20px;
 }
 .main  h1{
+	font-family: 'Cabin';
     color: #99ffff;
   	opacity: 0.9;
+  	font-weight: 500;
     text-align: center;
 }
 .main  h3{
+	font-family: "Open Sans";
 	font-weight: normal;
 	text-align: center;
 	color: #ccffff;
 	margin: auto;
 	opacity: 0.87;
 	max-width: 600px;
+}
+
+.mc-field-group  h4{
+	font-family: "Open Sans";
+	font-weight: normal;
+	text-align: center;
+	color: #fff;
+	margin: auto;
+	opacity: 0.87;
+	max-width: 600px;
+	font-size: 14px;
+	padding-bottom: 20px;
 }
 
 .footer {
@@ -103,12 +118,6 @@ body {
 	margin-top: 75px;
 }
 
-/*.clear {
-	width: 130px;
-	float: left;
-	padding-top: 10px;
-}*/
-
 </style>
 <title>DesignerFriendsPodcast</title>
 </head>
@@ -117,6 +126,7 @@ body {
 <h1>Designer Friends Podcast</h1>
 <h3>Everyday kick-ass designers from around the world 
 tell stories on design, travel, life, and more.</h3>
+
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
 <form action="https://designerfriendspodcast.us18.list-manage.com/subscribe/post?u=f05d10c5abd4f633e93d3c6b4&amp;id=7e6326036b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -124,17 +134,19 @@ tell stories on design, travel, life, and more.</h3>
 	
 <div class="mc-field-group">
 	<div class = "center-form">
-	<input type="email" value="" name="EMAIL" class="required_email" placeholder="Email Address" id="mce-EMAIL">
-	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-	</div>
-</div>
 	<div id="mce-responses" class="clear">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f05d10c5abd4f633e93d3c6b4_7e6326036b" tabindex="-1" value=""></div>
-<!--     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
- -->    </div>
+
+	<h4>Coming soon! Get a message when it premieres by subscribing below.</h4>	
+    <input type="email" value="" name="EMAIL" class="required_email" placeholder="Email Address" id="mce-EMAIL">
+	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+	   </div>
+	</div>
+</div>
+
 </form>
 </div>
 
