@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Open-Sans' rel='stylesheet'>
 <style>
 html{
   height: 100%;
 }
-@media all and (max-width 320px){
- /* h1 {
-    font-size: calc(42px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+@media (max-width: 498px) { 
+h1 {
+    font-size: 36px;
   }
   h3 {
-    font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  }*/
-  .button {
-  	padding-top: 20px;
+    font-size: 18px;
   }
+  h4 {
+    font-size: 16px;
+  }
+  .main {
+  	  max-width: 85%;
+  	  flex: 1 0 auto;
+  }
+
+  .button {
+	width: 240px;
+	height: 46px;
+	margin-top:15px;
 }
-@media all and (max-width: 641px) {
-	.button {
-  	margin-top: 10px;
-  	}
+
+.center-form {
+	display: block;
+	text-align: center;
+	margin-top: 75px;
 }
-/*@media all and (min-width: 600px) {
+}
+@media all and (min-width:499px) {
   h1 {
     font-size: 42px;
   }
   h3 {
     font-size: 20px;
   }
-}*/
+  h4 {
+    font-size: 18px;
+  }
+  .main {
+  	  max-width: 100%;
+  	  flex: 1 0 auto;
+  }
+
+  .button {
+	width: 130px;
+	height: 46px;
+	font-size: 16px;
+}
+
+.center-form {
+	display: block;
+	text-align: center;
+	margin-top: 75px;
+}
+}
+
 body {
 	background-color: #003333;
 	display: flex;
@@ -40,18 +71,16 @@ body {
  }
 .main  {
 	margin: auto;
-    width: 60%;
+	margin-top: 50px;
     min-height: 100%
-    flex: 1 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
 .main  h1{
-	font-family: 'Cabin';
+	font-family: 'Lato';
     color: #99ffff;
   	opacity: 0.9;
   	font-weight: 500;
     text-align: center;
-    font-size: 42px;
 }
 .main  h3{
 	font-family: "Open Sans";
@@ -61,7 +90,28 @@ body {
 	margin: auto;
 	opacity: 0.87;
 	max-width: 600px;
-	font-size: 20px;
+}
+
+.button {
+	background-color: #66ff99;
+	border-color: #66ff99;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+.required_email {
+	width: 210px;
+	height: 43px;
+	border: 1px;
+	border-color: #FFFFFF;
+	border-radius: 3px;
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .mc-field-group  h4{
@@ -72,7 +122,6 @@ body {
 	margin: auto;
 	opacity: 0.87;
 	max-width: 600px;
-	font-size: 14px;
 	padding-bottom: 20px;
 }
 
@@ -89,35 +138,6 @@ body {
 	width:auto;
 }
 
-.button {
-	background-color: #66ff99;
-	border: 1px;
-	border-color: #66ff99;
-	font-family: 'Cabin';
-	font-weight: semi-bold;
-	width: 130px;
-	height: 46px;
-	border-radius: 3px;
-	font-size: 16px;
-}
-
-.required_email {
-	width: 210px;
-	height: 43px;
-	border: 1px;
-	border-color: #FFFFFF;
-	border-radius: 3px;
-	font-family: 'Cabin';
-	font-weight: normal;
-	font-size: 16px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.center-form {
-	display: block;
-	text-align: center;
-	margin-top: 75px;
 }
 
 </style>
@@ -127,7 +147,7 @@ body {
 <div class="main">
 <h1>Designer Friends Podcast</h1>
 <h3>Everyday kick-ass designers from around the world 
-tell stories on design, travel, life, and more.</h3>
+tell their stories on design, travel, life, and more.</h3>
 
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
